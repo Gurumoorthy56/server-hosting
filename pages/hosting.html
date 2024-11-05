@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hosting Server</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+
+</head>
+
+<body data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0">
+    <gg>
+        <!-- <header class="">
+            <div class="container-fluid bg-brown py-5"></div>
+        </header> -->
+        <div class="nav-top contain-fluid mx-5 py-3 px-5">
+            <div class="row" onclick="(() => { window.location.href = '../index.html'; })()">
+                <div class="d-flex col-sm-6 col-md-2 align-items-center img-button">
+                    <div class=" me-3">
+                        <img src="../assets/svg/layers.svg" height="40" alt="">
+                    </div>
+                    <div id="server" class="fs-1 fw-medium ms-1">
+                        Server
+                    </div>
+                </div>
+
+                <div class="col-md-10 col-sm-6 nav-top-2 " style=" padding-right: 0px;">
+                    <div class="d-flex mx-4 align-items-center img-button">
+                        <div class="icons me-3 ">
+                            <img src="../assets/svg/headphone (1).svg" width="35px" height="35px" alt="">
+                        </div>
+                        <div class="top-text d-flex flex-column ms-3">
+                            <div class="sub-text ">
+                                24/7 SUPPORT
+                            </div>
+                            <div class="fw-medium fs-5">
+                                1-800-200-3911
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mx-3 align-items-center img-button">
+                        <div class="icons me-3 ">
+                            <img src="../assets/svg/mail.svg" width="33px" height="33px" alt="">
+                        </div>
+                        <div class="top-text d-flex flex-column ms-3">
+                            <div class="sub-text">
+                                EMAIL
+                            </div>
+                            <div class="fw-medium fs-5">
+                                mail@domain.com
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mx-3 align-items-center img-button">
+                        <div class="icons me-3 ">
+                            <img src="../assets/svg/comments.svg" width="39px" height="39px" alt="">
+                        </div>
+                        <div class="top-text d-flex flex-column ms-3">
+                            <div class="sub-text">
+                                LIVE CHAT
+                            </div>
+                            <div class="fw-medium fs-5">
+                                Chat With Us Now
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <nav class="navbar navbar-expand-lg bg-brown2 ">
+            <div class="container-fluid mx-5">
+                <button class="navbar-toggler navbar-dark collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse d-lg-flex collapse " id="navbarsExample11">
+                    <ul class="navbar-nav navbar-dark col-lg-9 fs-5 py-3" style="
+                    margin-left: 30px; letter-spacing: .06rem;
+                ">
+                        <li class="nav-item px-3">
+                            <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item px-34">
+                            <a class="nav-link" href="./domain.html">Domain</a>
+                        </li>
+                        <li id="dmenu" class="nav-item dropdown px-34">
+
+                            <div onclick="(() => { window.location.href = './hosting.html'; })()"><a
+                                    class="nav-link active dropdown-toggle d-flex align-items-center "
+                                    href="./hosting.html" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                                    aria-haspopup="true" aria-expanded="false">Hosting
+                                    <i class="material-icons fs-5">keyboard_arrow_down</i>
+                                </a></div>
+
+                            <ul id="dmenu-show" class="dropdown-menu triangle-up"
+                                style="border-radius: 0; margin-right: 0; box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.25); border:none">
+                                <li> <a class="dropdown-item" href="#">Shared Hosting</a></li>
+                                <li> <a class="dropdown-item" href="#">Dedicated Hosting</a></li>
+                                <li> <a class="dropdown-item" href="#">Premium Hosting</a></li>
+                                <li> <a class="dropdown-item" href="#">Cloud Hosting</a></li>
+
+                                <li id="dmenu2" class="dropdown dropend">
+                                    <a id="dmenu-show1"
+                                        class="dropdown-item dropdown-toggle d-flex align-items-center justify-content-between"
+                                        data-bs-toggle="dropdown" href="#" aria-expanded="false">Sub Menu <i
+                                            class="material-icons fs-5"
+                                            style="margin-right:-35px">keyboard_arrow_right</i></a>
+                                    <ul id="dmenu-show2" class="dropdown-menu"
+                                        style="border-radius: 0; margin-left: 0; box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.25); border:none">
+                                        <li> <a class="dropdown-item" href="#">Menu One</a></li>
+                                        <li> <a class="dropdown-item" href="#">Menu Two</a></li>
+                                        <li> <a class="dropdown-item" href="#">Menu Three</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item px-34">
+                            <a class="nav-link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item px-34">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-lg-flex col-lg-2 justify-content-center ms-5">
+                        <button onclick="(() => { window.location.href = './register.html'; })()"
+                            class="btn btn-out py-2 ms-2 me-1 " style=" font-size:20px;
+                        padding: 10px 30px;
+                    ">Register</button>
+                        <button onclick="(() => { window.location.href = './login.html'; })()" class="btn btn-in fs-5"
+                            style=" font-size:20px;
+                        padding: 10px 30px;
+                    ">Login</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </gg>
+
+    <div class="unit-5 overlay " style="background-image:url('../assets/hero_bg_1.jpg'); background-size: 100%; ">
+        <div class="container py-2 text-center">
+            <h2 class="mb-0 ">Hosting</h2>
+            <p class="mb-0 unit-6 fs-5"><a href="../index.html" style="color: #7cbd1e;" class="mx-2">Home</a> <span
+                    class="sep mx-1" style="    color: rgba(255, 255, 255, 0.2);">&gt;</span>
+                <span class="mx-2">Hosting</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="my-5"><br><br></div>
+
+    <div class="site-section">
+        <div class="container">
+
+            <div class="row scaling">
+                <div class="col-md-6 col-lg-4 aos-init aos-animate mt-4" data-aos="fade" style="
+                padding-left: 18px;
+                padding-right: 18px;
+            ">
+                    <div class="unit-7 pricing-table-modern__item">
+                        <div class="pricing-table__item-header">
+                            <div class="pricing-table__item-header-bg">
+                                <div class="pricing-table__item-header-bg-inner"></div>
+                            </div>
+                            <p class="pricing-table__item-title mb-0">Basic</p>
+                        </div>
+                        <div class="pricing-table__item-main">
+                            <span class="d-block h2">$19.99</span>
+                            <ul class="list-unstyled mb-4">
+                                <li><span class="text-marked">1</span>Website</li>
+                                <li><span class="text-marked">25 Email</span>Addresses</li>
+                                <li><span class="text-marked">100 GB</span>Storage</li>
+                                <li><span class="text-marked">300 Gig</span>Bandwidth</li>
+                            </ul>
+                            <div class="pricing-table__item-control"><a class="btn btn-secondary rounded-0 py-2 px-4"
+                                    href="#">Order now</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 aos-init aos-animate mt-4" data-aos="fade" data-aos-delay="100" style="
+                padding-left: 18px;
+                padding-right: 18px;
+            ">
+                    <div class="unit-7 pricing-table-modern__item featured-pricing">
+                        <div class="pricing-table__item-header">
+                            <div class="pricing-table__item-header-bg">
+                                <div class="pricing-table__item-header-bg-inner"></div>
+                            </div>
+                            <p class="pricing-table__item-title mb-0">Premium</p>
+                        </div>
+                        <div class="pricing-table__item-main">
+                            <span class="d-block h2">$49.99</span>
+                            <ul class="list-unstyled mb-4">
+                                <li><span class="text-marked">1</span>Website</li>
+                                <li><span class="text-marked">25 Email</span>Addresses</li>
+                                <li><span class="text-marked">100 GB</span>Storage</li>
+                                <li><span class="text-marked">300 Gig</span>Bandwidth</li>
+                            </ul>
+                            <div class="pricing-table__item-control"><a class="btn btn-primary rounded-0 py-2 px-4"
+                                    href="#">Order now</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 aos-init aos-animate mt-4" data-aos="fade" data-aos-delay="200" style="
+                padding-left: 18px;
+                padding-right: 18px;
+            ">
+                    <div class="unit-7 pricing-table-modern__item">
+                        <div class="pricing-table__item-header">
+                            <div class="pricing-table__item-header-bg">
+                                <div class="pricing-table__item-header-bg-inner"></div>
+                            </div>
+                            <p class="pricing-table__item-title mb-0">Advance</p>
+                        </div>
+                        <div class="pricing-table__item-main">
+                            <span class="d-block h2">$99.99</span>
+                            <ul class="list-unstyled mb-4">
+                                <li><span class="text-marked">1</span>Website</li>
+                                <li><span class="text-marked">25 Email</span>Addresses</li>
+                                <li><span class="text-marked">100 GB</span>Storage</li>
+                                <li><span class="text-marked">300 Gig</span>Bandwidth</li>
+                            </ul>
+                            <div class="pricing-table__item-control"><a class="btn btn-secondary rounded-0 py-2 px-4"
+                                    href="#">Order now</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="my-5"><br><br></div>
+
+    <div class="my-5"><br></div>
+
+
+    <div class="container-fluid px-5 mt-5 pt-5">
+        <div class=" d-flex flex-column text-center ">
+            <div class="col-12 mb-4 aos-init aos-animate" data-aos="fade" style="font-size: 2.5rem;">Why Choose Us
+            </div>
+        </div>
+
+        <div class="features mx-5 row mt-5" style="justify-content: space-around;">
+            <div id="" class="tiles mt-4 col-lg-3 aos-init aos-animate p-56  border2" data-aos="fade"
+                data-aos-delay="100">
+                <div class="d-flex align-items-center">
+                    <div class="me-4 svg-in"><svg class="unit-3-svg" xmlns="http://www.w3.org/2000/svg" width="80px"
+                            height="92px">
+                            <path fill-rule="evenodd" stroke="#7cbd1e" stroke-width="2px" stroke-linecap="butt"
+                                stroke-linejoin="miter" fill="none"
+                                d="M40.000,86.000 L5.012,66.250 L5.012,25.250 L40.000,5.000 L74.988,25.250 L74.988,66.250 L40.000,86.000 Z">
+                            </path>
+                        </svg>
+                        <img src="../assets/svg/equalizer.svg" alt="" height="42px" width="38px"
+                            style="position: absolute; left: 21px; top: 25px;">
+                    </div>
+
+                    <div class="fs-34">High Quality Hardware</div>
+                </div>
+                <div class="mt-4 fs-5 text-secondary2">Lorem ipsum dolor sit amet consectetur is a nice adipisicing
+                    elita
+                    ssumenda a
+                    similique
+                    perferendis dolorem eos.</div>
+            </div>
+            <div id="" class="tiles mt-4 col-lg-3 aos-init aos-animate p-56  border2" data-aos="fade"
+                data-aos-delay="200">
+                <div class="d-flex align-items-center">
+                    <div class="me-3 svg-in"><svg class="unit-3-svg" xmlns="http://www.w3.org/2000/svg" width="80px"
+                            height="92px">
+                            <path fill-rule="evenodd" stroke="#7cbd1e" stroke-width="2px" stroke-linecap="butt"
+                                stroke-linejoin="miter" fill="none"
+                                d="M40.000,86.000 L5.012,66.250 L5.012,25.250 L40.000,5.000 L74.988,25.250 L74.988,66.250 L40.000,86.000 Z">
+                            </path>
+                        </svg>
+                        <img src="../assets/svg/layers.svg" alt="" height="42px" width="38px"
+                            style="position: absolute; left: 21px; top: 25px;">
+                    </div>
+
+                    <div class="fs-34">Top Data Centers</div>
+                </div>
+                <div class="mt-4 fs-5 text-secondary2">Lorem ipsum dolor sit amet consectetur is a nice adipisicing
+                    elita
+                    ssumenda a
+                    similique
+                    perferendis dolorem eos.</div>
+            </div>
+            <div id="" class="tiles mt-4 col-lg-3 aos-init aos-animate p-56  border2" data-aos="fade"
+                data-aos-delay="300">
+                <div class="d-flex align-items-center">
+                    <div class="me-3 svg-in"><svg class="unit-3-svg" xmlns="http://www.w3.org/2000/svg" width="80px"
+                            height="92px">
+                            <path fill-rule="evenodd" stroke="#7cbd1e" stroke-width="2px" stroke-linecap="butt"
+                                stroke-linejoin="miter" fill="none"
+                                d="M40.000,86.000 L5.012,66.250 L5.012,25.250 L40.000,5.000 L74.988,25.250 L74.988,66.250 L40.000,86.000 Z">
+                            </path>
+                        </svg>
+                        <img src="../assets/svg/airplane.svg" alt="" height="42px" width="38px"
+                            style="position: absolute; left: 21px; top: 25px;">
+                    </div>
+
+                    <div class="fs-34">Outstanding Speed</div>
+                </div>
+                <div class="mt-4 fs-5 text-secondary2">Lorem ipsum dolor sit amet consectetur is a nice adipisicing
+                    elita
+                    ssumenda a
+                    similique
+                    perferendis dolorem eos.</div>
+            </div>
+
+            <div id="" class="tiles mt-4 col-lg-3 aos-init aos-animate p-56  border2" data-aos="fade"
+                data-aos-delay="400">
+                <div class="d-flex align-items-center">
+                    <div class="me-3 svg-in">
+                        <svg class="unit-3-svg" xmlns="http://www.w3.org/2000/svg" width="80px" height="92px">
+                            <path fill-rule="evenodd" stroke="#7cbd1e" stroke-width="2px" stroke-linecap="butt"
+                                stroke-linejoin="miter" fill="none"
+                                d="M40.000,86.000 L5.012,66.250 L5.012,25.250 L40.000,5.000 L74.988,25.250 L74.988,66.250 L40.000,86.000 Z">
+                            </path>
+                        </svg>
+                        <img src="../assets/svg/fire-2.svg" alt="" height="42px" width="38px"
+                            style="position: absolute; left: 21px; top: 25px;">
+                    </div>
+
+                    <div class="fs-34">Amazing Uptime</div>
+                </div>
+                <div class="mt-4 fs-5 text-secondary2">Lorem ipsum dolor sit amet consectetur is a nice adipisicing
+                    elita
+                    ssumenda a
+                    similique
+                    perferendis dolorem eos.</div>
+            </div>
+            <div id="" class="tiles mt-4 col-lg-3 aos-init aos-animate p-56  border2" data-aos="fade"
+                data-aos-delay="500">
+                <div class="d-flex align-items-center">
+                    <div class="me-3 svg-in"><svg class="unit-3-svg" xmlns="http://www.w3.org/2000/svg" width="80px"
+                            height="92px">
+                            <path fill-rule="evenodd" stroke="#7cbd1e" stroke-width="2px" stroke-linecap="butt"
+                                stroke-linejoin="miter" fill="none"
+                                d="M40.000,86.000 L5.012,66.250 L5.012,25.250 L40.000,5.000 L74.988,25.250 L74.988,66.250 L40.000,86.000 Z">
+                            </path>
+                        </svg>
+                        <img src="../assets/svg/headphone (1).svg" alt="" height="42px" width="38px"
+                            style="position: absolute; left: 21px; top: 25px;">
+                    </div>
+
+                    <div class="fs-34">Best Support</div>
+                </div>
+                <div class="mt-4 fs-5 text-secondary2">Lorem ipsum dolor sit amet consectetur is a nice adipisicing
+                    elita
+                    ssumenda a
+                    similique
+                    perferendis dolorem eos.</div>
+            </div>
+            <div id="" class="tiles mt-4 col-lg-3 aos-init aos-animate p-56  border2" data-aos="fade"
+                data-aos-delay="600">
+                <div class="d-flex align-items-center">
+                    <div class="me-3 svg-in">
+                        <svg class="unit-3-svg" xmlns="http://www.w3.org/2000/svg" width="80px" height="92px">
+                            <path fill-rule="evenodd" stroke="#7cbd1e" stroke-width="2px" stroke-linecap="butt"
+                                stroke-linejoin="miter" fill="none"
+                                d="M40.000,86.000 L5.012,66.250 L5.012,25.250 L40.000,5.000 L74.988,25.250 L74.988,66.250 L40.000,86.000 Z">
+                            </path>
+                        </svg>
+                        <img src="../assets/svg/user-list.svg" alt="" height="42px" width="38px"
+                            style="position: absolute; left: 21px; top: 25px;">
+                    </div>
+
+                    <div class="fs-34">Client Reviews</div>
+                </div>
+                <div class="mt-4 fs-5 text-secondary2">Lorem ipsum dolor sit amet consectetur is a nice adipisicing
+                    elita
+                    ssumenda a
+                    similique
+                    perferendis dolorem eos.</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="my-5"><br><br></div>
+
+    <footer class="container-fluid  bg-brown2 text-light py-5">
+        <div class="py-5 mx-5  row">
+            <div class="col-xl-7 col-md-12 ps-5">
+                <div class="row fs-5 py-5 ">
+                    <div class="col-6 col-md-4 mb-3">
+                        <h4>Company</h4>
+                        <ul class="nav flex-column pt-4 px-0">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">About</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">Services</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">Servers</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">Hosting</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">News</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">Careers</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-4 mb-3">
+                        <h4>Navigations</h4>
+                        <ul class="nav flex-column  pt-4 px=0">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">About</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">Services</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">Servers</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">Hosting</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">News</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">Careers</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-4 mb-3">
+                        <h4>Quick Menu</h4>
+                        <ul class="nav flex-column  pt-4 px-0">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">About</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">Services</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">Servers</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">Hosting</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">News</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr id="footer-hr">
+            <div class="footer-sec-2 col-xl-5 col-md-12">
+                <div class="row fs-5 py-5">
+                    <div class="col-12">
+                        <h4>Europe</h4>
+                    </div>
+                    <div class="col-6 pt-4 pb-4 text-footer2">
+                        <div>London - 2398</div>
+                        <div>10 Japson Street</div>
+                    </div>
+                    <div class="col-6 pt-4 pb-4 text-footer2">
+                        <div>Tel. + (123) 3240-345-9348</div>
+                        <div>Mail</div>
+                        <div>europe@youdomain.com</div>
+                    </div>
+
+                    <div class="col-12 pt-5">
+                        <h4>USA</h4>
+                    </div>
+                    <div class="col-6 pt-4 text-footer2">
+                        <div>New York - 2398
+                        </div>
+                        <div>10 Hadson Carl Street</div>
+                    </div>
+                    <div class="col-6 pt-4 text-footer2">
+                        <div>Tel. + (123) 3240-345-9348</div>
+                        <div>Mail. usa@youdomain.com</div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="footer-end d-flex align-items-center justify-content-center pb-5 mb-5 fs-5 text-footer2 ">Copyright
+            © 2024
+            All
+            Rights
+            Reserved |
+            This
+            template is made with ❤️ by
+            Colorlib
+            <!-- <span class="text-footer align-items-center m-0 ps-1 ">Colorlib</span> -->
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script>
+
+        $("#dmenu").mouseenter(function () {
+            $("#dmenu-show").addClass("show");
+        });
+
+        $("#dmenu").mouseleave(function () {
+            $("#dmenu-show").removeClass("show");
+        });
+
+        $("#dmenu2").mouseenter(function () {
+            $("#dmenu-show1").addClass("show");
+            $("#dmenu-show2").addClass("show");
+            $("#dmenu-show2").attr("data-bs-popper", "static")
+
+        });
+
+        $("#dmenu2").mouseleave(function () {
+            $("#dmenu-show1").removeClass("show");
+            $("#dmenu-show2").removeClass("show");
+        });
+
+
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>
