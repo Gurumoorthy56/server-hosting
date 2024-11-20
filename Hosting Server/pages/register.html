@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hosting Server</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=info" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+
+</head>
+
+<body data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0">
+    <gg>
+        <!-- <header class="">
+            <div class="container-fluid bg-brown py-5"></div>
+        </header> -->
+        <div class="nav-top contain-fluid mx-5 py-3 px-5">
+            <div class="row" onclick="(() => { window.location.href = '../index.html'; })()">
+                <div class="d-flex col-md-2 col-sm-6 align-items-center img-button">
+                    <div class=" me-3">
+                        <img src="../assets/svg/layers.svg" height="40" alt="">
+                    </div>
+                    <div id="server" class="fs-1 fw-medium ms-1">
+                        Server
+                    </div>
+                </div>
+
+                <div class="col-md-10 col-sm-6 nav-top-2 " style=" padding-right: 0px;">
+                    <div class="d-flex mx-4 align-items-center img-button">
+                        <div class="icons me-3 ">
+                            <img src="../assets/svg/headphone (1).svg" width="35px" height="35px" alt="">
+                        </div>
+                        <div class="top-text d-flex flex-column ms-3">
+                            <div class="sub-text ">
+                                24/7 SUPPORT
+                            </div>
+                            <div class="fw-medium fs-5">
+                                1-800-200-3911
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mx-3 align-items-center img-button">
+                        <div class="icons me-3 ">
+                            <img src="../assets/svg/mail.svg" width="33px" height="33px" alt="">
+                        </div>
+                        <div class="top-text d-flex flex-column ms-3">
+                            <div class="sub-text">
+                                EMAIL
+                            </div>
+                            <div class="fw-medium fs-5">
+                                mail@domain.com
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mx-3 align-items-center img-button">
+                        <div class="icons me-3 ">
+                            <img src="../assets/svg/comments.svg" width="39px" height="39px" alt="">
+                        </div>
+                        <div class="top-text d-flex flex-column ms-3">
+                            <div class="sub-text">
+                                LIVE CHAT
+                            </div>
+                            <div class="fw-medium fs-5">
+                                Chat With Us Now
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <nav class="navbar navbar-expand-lg bg-brown2 ">
+            <div class="container-fluid mx-5">
+                <button class="navbar-toggler navbar-dark collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse d-lg-flex collapse " id="navbarsExample11">
+                    <ul class="navbar-nav navbar-dark col-lg-9 fs-5 py-3" style="
+                    margin-left: 30px; letter-spacing: .06rem;
+                ">
+                        <li class="nav-item px-3">
+                            <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item px-34">
+                            <a class="nav-link" href="./domain.html">Domain</a>
+                        </li>
+                        <li id="dmenu" class="nav-item dropdown px-34">
+
+                            <div onclick="(() => { window.location.href = './hosting.html'; })()"><a
+                                    class="nav-link dropdown-toggle d-flex align-items-center " href="./hosting.html"
+                                    data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true"
+                                    aria-expanded="false">Hosting
+                                    <i class="material-icons fs-5">keyboard_arrow_down</i>
+                                </a></div>
+
+                            <ul id="dmenu-show" class="dropdown-menu triangle-up"
+                                style="border-radius: 0; margin-right: 0; box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.25); border:none">
+                                <li> <a class="dropdown-item" href="#">Shared Hosting</a></li>
+                                <li> <a class="dropdown-item" href="#">Dedicated Hosting</a></li>
+                                <li> <a class="dropdown-item" href="#">Premium Hosting</a></li>
+                                <li> <a class="dropdown-item" href="#">Cloud Hosting</a></li>
+
+                                <li id="dmenu2" class="dropdown dropend">
+                                    <a id="dmenu-show1"
+                                        class="dropdown-item dropdown-toggle d-flex align-items-center justify-content-between"
+                                        data-bs-toggle="dropdown" href="#" aria-expanded="false">Sub Menu <i
+                                            class="material-icons fs-5"
+                                            style="margin-right:-35px">keyboard_arrow_right</i></a>
+                                    <ul id="dmenu-show2" class="dropdown-menu"
+                                        style="border-radius: 0; margin-left: 0; box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.25); border:none">
+                                        <li> <a class="dropdown-item" href="#">Menu One</a></li>
+                                        <li> <a class="dropdown-item" href="#">Menu Two</a></li>
+                                        <li> <a class="dropdown-item" href="#">Menu Three</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item px-34">
+                            <a class="nav-link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item px-34">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-lg-flex col-lg-2 justify-content-center ms-5">
+                        <button onclick="(() => { window.location.href = './register.html'; })()"
+                            class="btn btn-out py-2 ms-2 me-1 " style=" font-size:20px;
+                        padding: 10px 30px;
+                    ">Register</button>
+                        <button onclick="(() => { window.location.href = './login.html'; })()" class="btn btn-in fs-5"
+                            style=" font-size:20px;
+                        padding: 10px 30px;
+                    ">Login</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </gg>
+
+    <div class="unit-5 overlay " style="background-image:url('../assets/hero_bg_1.jpg'); background-size: 100%; ">
+        <div class="container py-2 text-center">
+            <h2 class="mb-0 ">Register</h2>
+            <p class="mb-0 unit-6 fs-5"><a href="../index.html" style="color: #7cbd1e;" class="mx-2">Home</a> <span
+                    class="sep mx-1" style="    color: rgba(255, 255, 255, 0.2);">&gt;</span>
+                <span class="mx-2">Register</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="site-section bg-light">
+        <br><br><br><br><br><br><br><br>
+        <div class="container">
+            <div id="Register" class="row d-flex justify-content-center">
+                <div class="col-lg-12 col-md-12 mb-5">
+                    <form autocomplete="on" action="login.html" class="p-5 bg-white" id="Register2">
+                        <h2 class="mb-4 text-black fw-normal">Register</h2>
+                        <h2 class="fs-5 fw-bold mb-0">Account Details</h2>
+                        <div class="row form-group">
+                            <div class="col-lg-6 col-md-12 mb-3 mb-md-0">
+                                <label class=" required-field" for="email">Email</label>
+                                <input autocomplete="on" type="text" id="email" class="form-control rounded-0"
+                                    placeholder="Enter your email">
+                                <p id="emailresult"></p>
+                            </div>
+                            <div class="col-lg-3 col-md-12 mb-3 mb-md-0">
+                                <label class="font-weight-bold required-field" for="new-password">New
+                                    Password</label>
+                                <span class="d-inline-block" tabindex="0" data-bs-toggle="popover"
+                                    data-bs-trigger="hover focus"
+                                    data-bs-content="Password should have atleast 8 characters with Uppercase, numbers and symbols">
+                                    <span class="material-symbols-outlined" style="font-size: 16px;">
+                                        info
+                                    </span>
+                                </span>
+
+                                <div style="position: relative;">
+                                    <input type="password" id="new-password" class="form-control rounded-0"
+                                        placeholder="Enter your password" maxlength="20">
+                                    <i class="material-icons fs-5"
+                                        style="cursor: pointer; position: absolute; z-index: 1; right:15px;top:15px;"
+                                        id="togglePassword-1">visibility</i>
+                                </div>
+                                <p id="password-strength"></p>
+                            </div>
+                            <div class="col-lg-3 col-md-12 mb-3 mb-md-0">
+                                <label class="font-weight-bold required-field" for="confirm-password">Confirm
+                                    Password</label>
+                                <div style="position: relative;">
+                                    <input type="password" id="confirm-password" class="form-control rounded-0"
+                                        placeholder="Enter your confirm password" maxlength="20">
+                                    <i class="material-icons fs-5"
+                                        style="cursor: pointer; position: absolute; z-index: 1; right:15px;top:15px;"
+                                        id="togglePassword-2">visibility</i>
+                                </div>
+                                <p id="password-match"></p>
+                            </div>
+                        </div>
+                        <h2 class="fs-5 fw-bold mt-5 mb-0">Your personal details</h2>
+                        <div class="row form-group">
+                            <div class="col-lg-1 col-md-4">
+                                <label class="font-weight-bold" for="email">Salutation</label>
+                                <select id="salutation" name="salutation">
+                                    <option value="Mr.">Mr.</option>
+                                    <option value="Mrs.">Mrs.</option>
+                                    <option value="K">K</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-2 col-md-8">
+                                <label class="font-weight-bold required-field" for="first-name">First
+                                    Name</label>
+                                <input type="text" id="first-name" class="form-control rounded-0">
+                                <p id="fnresult"></p>
+                            </div>
+                            <div class="col-lg-3 col-md-12">
+                                <label class="font-weight-bold required-field" for="last-name">Last Name</label>
+                                <input type="text" id="last-name" class="form-control rounded-0">
+                                <p id="lnresult"></p>
+                            </div>
+                            <div class="col-lg-3 col-md-12">
+                                <label class="font-weight-bold" for="title">Title</label>
+                                <input type="text" id="title" class="form-control rounded-0">
+                            </div>
+                            <div class="col-lg-3 col-md-12">
+                                <label class="font-weight-bold" for="position">Your Position</label>
+                                <input type="text" id="position" class="form-control rounded-0">
+                            </div>
+                        </div>
+                        <div class="row form-group ">
+                            <div class="col-lg-3 col-md-12">
+                                <label class="font-weight-bold" for="country">Country</label>
+                                <select id="country" name="country" class="select-b">
+                                </select>
+                            </div>
+                            <div class="col-lg-3 col-md-12">
+                                <label class="font-weight-bold " for="language">Language</label>
+                                <select id="language" name="language" class="select-b">
+                                    <option value="German">Pashto</option>
+                                    <option value="English">Uzbek</option>
+                                    <option value="Spanish">Turkmen</option>
+                                    <!-- <option value="French">French</option> -->
+
+                                </select>
+                            </div>
+                            <div class="col-lg-1 col-md-4">
+                                <label class="font-weight-bold" for="tel-code">Code</label>
+                                <span id="pop-code" class="d-inline-block" tabindex="0" data-bs-toggle="popover"
+                                    data-bs-trigger="hover focus"
+                                    data-bs-content="The country code is automatically set based on your selected country and cannot be modified manually.">
+                                    <span class="material-symbols-outlined" style="font-size: 16px;">
+                                        info
+                                    </span>
+                                </span>
+                                <input readonly type="text" id="tel-code" class="form-control rounded-0" value="+93">
+
+                            </div>
+                            <div class="col-lg-2 col-md-8">
+                                <label class="font-weight-bold required-field" for="tel">Telephone</label>
+                                <input type="tel" id="tele" class="form-control rounded-0"
+                                    placeholder="Enter your telephone number" maxlength="10"
+                                    oninput="this.value = this.value.replace(/[^0-9]/, '');">
+                                <p id="teleresult"></p>
+                            </div>
+                            <div class="col-lg-1 col-md-4">
+                                <label class="font-weight-bold" for="mob-code">Code</label>
+                                <span id="pop-code" class="d-inline-block" tabindex="0" data-bs-toggle="popover"
+                                    data-bs-trigger="hover focus"
+                                    data-bs-content="The country code is automatically set based on your selected country and cannot be modified manually.">
+                                    <span class="material-symbols-outlined" style="font-size: 16px;">
+                                        info
+                                    </span>
+                                </span>
+                                <input readonly type="text" id="mob-code" class="form-control rounded-0" value="+44">
+                            </div>
+                            <div class="col-lg-2 col-md-8">
+                                <label class="font-weight-bold" for="mob">Mobile</label>
+                                <input type="tel" id="mob" class="form-control rounded-0"
+                                    placeholder="Enter your mobile number">
+                            </div>
+                        </div>
+                        <h2 class="fs-5 fw-bold mb-0 mt-5">Customer Type</h2>
+                        <div class="row form-group mb-5 ">
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5 d-flex d-flex align-items-center">
+                                <input type="radio" id="company" name="cus-type" value="company">
+                                <label for="company">Company <span style="font-size: 16px; margin-right: 20px;">(with
+                                        company
+                                        address details)</span>
+                                </label>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7 d-flex d-flex align-items-center">
+                                <input type="radio" id="one-man" name="cus-type" value="one-man">
+                                <label for="one-man">One-man business <span style="font-size: 16px;">(without
+                                        company address
+                                        details)</span></label>
+                            </div>
+                        </div>
+                        <h2 class="fs-5 fw-bold mb-0">Your Address</h2>
+                        <div class="row form-group">
+                            <div class="col-lg-3 col-md-12 mb-3 mb-md-0">
+                                <label class="font-weight-bold required-field" for="street">Street</label>
+                                <input type="text" id="street" class="form-control rounded-0"
+                                    placeholder="Enter your street">
+                                <p id="streetresult"></p>
+                            </div>
+                            <div class="col-lg-3 col-md-12 mb-3 mb-md-0">
+                                <label class="font-weight-bold required-field" for="postal">Postal
+                                    Code</label>
+                                <input type="text" maxlength="6" id="postal" class="form-control rounded-0"
+                                    placeholder="Enter your postal code"
+                                    oninput="this.value = this.value.replace(/[^0-9]/, '');">
+                                <p id="pcoderesult"></p>
+                            </div>
+                            <div class="col-lg-3 col-md-12 mb-3 mb-md-0">
+                                <label class="font-weight-bold required-field" for="city">City</label>
+                                <input type="text" id="city" class="form-control rounded-0"
+                                    placeholder="Enter your city">
+                                <p id="cityresult"></p>
+                            </div>
+                            <div class="col-lg-3 col-md-12 mb-3 mb-md-0">
+                                <label class="font-weight-bold " for="customid">Customs
+                                    Id</label>
+                                <input type="text" id="customid" class="form-control rounded-0"
+                                    placeholder="Enter your costom id">
+                            </div>
+                        </div>
+
+                        <div class="row form-group  ">
+                            <div class="col-lg-3 col-md-12 autocomplete-container">
+                                <label class="font-weight-bold" for="server">Server</label>
+                                <input placeholder="Enter Server type" autocomplete="off" type="text" id="server-type"
+                                    name="server" class="form-control rounded-0" />
+                                <div id="autocomplete-list" class="autocomplete-items"></div>
+                            </div>
+                            <div id="selected-items" class="col-lg-9 col-md-12 pt-5">
+
+                            </div>
+
+                        </div>
+
+                        <h2 class="fs-5 fw-bold mb-0 mt-5">Server Customization</h2>
+
+                        <div class="row form-group  ">
+
+                            <div class="col-lg-3 col-md-12 ">
+                                <label class="font-weight-bold required-field" for="server-date">Server Activation
+                                    Date</label>
+                                <input placeholder="Enter Server type" autocomplete="off" type="date" id="server-date"
+                                    name="server-date" class="form-control rounded-0" />
+                            </div>
+                            <div class="col-lg-4 col-md-12">
+                                <label class="font-weight-bold required-field" for="server-color">Server Theme
+                                    Color</label>
+                                <div class="color-input border py-3 ">
+                                    <div class=" d-flex justify-content-between px-3 mb-2 align-items-center">
+                                        <p>Primary Color</p>
+                                        <input placeholder="Enter Server Theme color" value="#3D5300" type="color"
+                                            id="server-color-primary" name="server-color-primary"
+                                            class="form-control form-color rounded-0" />
+                                    </div>
+                                    <div class=" d-flex justify-content-between px-3 align-items-center">
+                                        <p>Secondary Color</p>
+                                        <input placeholder="Enter Server Theme color" value="#859F3D" type="color"
+                                            id="server-color-secondary" name="server-color-secondary"
+                                            class="form-control form-color rounded-0" />
+                                    </div>
+                                </div>
+                                <p id="color-result"></p>
+                            </div>
+                            <div class="col-lg-5 col-md-12 ">
+                                <label class="font-weight-bold required-field" for="company-logo">Your Company Logo
+                                    (Image)</label>
+                                <div class="border file-input">
+                                    <input accept=".jpg,.png,.pdf" type="file" id="company-logo" name="company-logo"
+                                        class="form-control rounded-0" />
+                                    <p>Note: Your file must be in *.pdf, *.jpeg, or *.png format & must not exceed 500
+                                        KB in size.</p>
+                                </div>
+                                <p id="file-result"></p>
+                            </div>
+
+
+                        </div>
+
+
+
+                        <h2 class="fs-5 fw-bold mb-0 mt-5">Details to your order communication
+                            preferences
+                        </h2>
+                        <div class="row  form-group align-items-center">
+                            <div class="col-xl-3 col-md-12  mb-md-0">
+                                <label class="font-weight-bold required-field" for="email-invoice">email
+                                    address for invoices </label>
+                                <input type="text" id="email-invoice" class="form-control rounded-0">
+                                <p id="emailinresult"></p>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-12 mb-3 mt-md-5 mb-md-0 d-flex align-items-center">
+                                <input type="checkbox" id="same-email" class=""
+                                    style="margin-top: 0px; margin-right: 10px;">
+                                <label class="font-weight-bold" for="same-email">Use my
+                                    email address</label>
+
+                            </div>
+
+                        </div>
+                        <div class="mt-3 d-flex align-items-center"> <input type="checkbox" id="agree" class=""
+                                style="margin-bottom: 0px; margin-right: 10px;">
+                            <label class="font-weight-bold required-field" for="agree">I agree to
+                                the
+                                terms of use
+                                of the Company's Partner Programme and the
+                                data security policy</label>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <input id="submit-button" type="submit" value="Register"
+                                    class="btn btn-in  py-2 px-4 rounded-0" style="font-size: 1.2rem;">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <br><br><br><br><br><br><br><br>
+    </div>
+
+    <div class="my-5"><br><br></div>
+
+
+    <div class="site-section px-5">
+        <div class="container-fluid px-5">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-md-6 aos-init aos-animate mb-3" data-aos="fade">
+                    <h1>Frequently Ask Questions</h1>
+                </div>
+            </div>
+
+
+            <div class="row justify-content-center aos-init" data-aos="fade" data-aos-delay="100">
+                <div class="col-md-8 unit-8">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h3 class="mb-0 heading">
+                                <a class="btn-block" data-bs-toggle="collapse" href="#collapseOne" role="button"
+                                    aria-expanded="true" aria-controls="collapseOne">What is the name of your company
+                                    <span class="icon"></span></a>
+                            </h3>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="body-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quae cumque
+                                        perspiciatis aperiam accusantium facilis provident aspernatur nisi optio debitis
+                                        dolorum, est eum eligendi vero aut ad necessitatibus nulla sit labore doloremque
+                                        magnam! Ex molestiae, dolor tempora, ad fuga minima enim mollitia consequuntur,
+                                        necessitatibus praesentium eligendi officia recusandae culpa tempore eaque quasi
+                                        ullam magnam modi quidem in amet. Quod debitis error placeat, tempore quasi
+                                        aliquid eaque vel facilis culpa voluptate.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="mb-0 heading">
+                                <a class="btn-block" data-bs-toggle="collapse" href="#collapseTwo" role="button"
+                                    aria-expanded="false" aria-controls="collapseTwo">How much pay for 3 months? <span
+                                        class="icon"></span></a>
+                            </h3>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="body-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ad laborum
+                                        expedita. Nostrum iure atque enim quisquam minima distinctio omnis, consequatur
+                                        aliquam suscipit, quidem, esse aspernatur! Libero, excepturi animi repellendus
+                                        porro impedit nihil in doloremque a quaerat enim voluptatum, perspiciatis, quas
+                                        dignissimos maxime ut cum reiciendis eius dolorum voluptatem aliquam!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="mb-0 heading">
+                                <a class="btn-block" data-bs-toggle="collapse" href="#collapseThree" role="button"
+                                    aria-expanded="false" aria-controls="collapseThree">Do I need to register? <span
+                                        class="icon"></span></a>
+                            </h3>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="body-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ad laborum
+                                        expedita. Nostrum iure atque enim quisquam minima distinctio omnis, consequatur
+                                        aliquam suscipit, quidem, esse aspernatur! Libero, excepturi animi repellendus
+                                        porro impedit nihil in doloremque a quaerat enim voluptatum, perspiciatis, quas
+                                        dignissimos maxime ut cum reiciendis eius dolorum voluptatem aliquam!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="mb-0 heading">
+                                <a class="btn-block" data-bs-toggle="collapse" href="#collapseFour" role="button"
+                                    aria-expanded="false" aria-controls="collapseFour">Who should I contact in case of
+                                    support? <span class="icon"></span></a>
+                            </h3>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="body-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ad laborum
+                                        expedita. Nostrum iure atque enim quisquam minima distinctio omnis, consequatur
+                                        aliquam suscipit, quidem, esse aspernatur! Libero, excepturi animi repellendus
+                                        porro impedit nihil in doloremque a quaerat enim voluptatum, perspiciatis, quas
+                                        dignissimos maxime ut cum reiciendis eius dolorum voluptatem aliquam!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="my-5"><br><br></div>
+
+    <footer class="container-fluid  bg-brown2 text-light py-5">
+        <div class="py-5 mx-5  row">
+            <div class="col-xl-7 col-md-12 ps-5">
+                <div class="row fs-5 py-5 ">
+                    <div class="col-6 col-md-4 mb-3">
+                        <h4>Company</h4>
+                        <ul class="nav flex-column pt-4 px-0">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">About</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">Services</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">Servers</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">Hosting</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">News</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">Careers</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-4 mb-3">
+                        <h4>Navigations</h4>
+                        <ul class="nav flex-column  pt-4 px=0">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">About</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">Services</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">Servers</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">Hosting</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">News</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">Careers</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-4 mb-3">
+                        <h4>Quick Menu</h4>
+                        <ul class="nav flex-column  pt-4 px-0">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">About</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">Services</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">Servers</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">Hosting</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">News</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-footer">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr id="footer-hr">
+            <div class="footer-sec-2 col-xl-5 col-md-12">
+                <div class="row fs-5 py-5">
+                    <div class="col-12">
+                        <h4>Europe</h4>
+                    </div>
+                    <div class="col-6 pt-4 pb-4 text-footer2">
+                        <div>London - 2398</div>
+                        <div>10 Japson Street</div>
+                    </div>
+                    <div class="col-6 pt-4 pb-4 text-footer2">
+                        <div>Tel. + (123) 3240-345-9348</div>
+                        <div>Mail</div>
+                        <div>europe@youdomain.com</div>
+                    </div>
+
+                    <div class="col-12 pt-5">
+                        <h4>USA</h4>
+                    </div>
+                    <div class="col-6 pt-4 text-footer2">
+                        <div>New York - 2398
+                        </div>
+                        <div>10 Hadson Carl Street</div>
+                    </div>
+                    <div class="col-6 pt-4 text-footer2">
+                        <div>Tel. + (123) 3240-345-9348</div>
+                        <div>Mail. usa@youdomain.com</div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="footer-end d-flex align-items-center justify-content-center pb-5 mb-5 fs-5 text-footer2 ">Copyright
+            © 2024
+            All
+            Rights
+            Reserved |
+            This
+            template is made with ❤️ by
+            Colorlib
+            <!-- <span class="text-footer align-items-center m-0 ps-1 ">Colorlib</span> -->
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>-->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+
+        $("#dmenu").mouseenter(function () {
+            $("#dmenu-show").addClass("show");
+        });
+
+        $("#dmenu").mouseleave(function () {
+            $("#dmenu-show").removeClass("show");
+        });
+
+        $("#dmenu2").mouseenter(function () {
+            $("#dmenu-show1").addClass("show");
+            $("#dmenu-show2").addClass("show");
+            $("#dmenu-show2").attr("data-bs-popper", "static")
+
+        });
+
+        $("#dmenu2").mouseleave(function () {
+            $("#dmenu-show1").removeClass("show");
+            $("#dmenu-show2").removeClass("show");
+        });
+
+
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="register.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>
