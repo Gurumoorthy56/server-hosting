@@ -185,7 +185,7 @@
                             <div class="col-lg-3 col-md-12 mb-3 mb-md-0">
                                 <label class="font-weight-bold required-field" for="new-password">New
                                     Password</label>
-                                <span class="d-inline-block" tabindex="0" data-bs-toggle="popover"
+                                <span class="d-inline-block" data-bs-toggle="popover"
                                     data-bs-trigger="hover focus"
                                     data-bs-content="Password should have atleast 8 characters with Uppercase, numbers and symbols">
                                     <span class="material-symbols-outlined" style="font-size: 16px;">
@@ -263,7 +263,7 @@
                             </div>
                             <div class="col-lg-1 col-md-4">
                                 <label class="font-weight-bold" for="tel-code">Code</label>
-                                <span id="pop-code" class="d-inline-block" tabindex="0" data-bs-toggle="popover"
+                                <span id="pop-code" class="d-inline-block" data-bs-toggle="popover"
                                     data-bs-trigger="hover focus"
                                     data-bs-content="The country code is automatically set based on your selected country and cannot be modified manually.">
                                     <span class="material-symbols-outlined" style="font-size: 16px;">
@@ -282,7 +282,7 @@
                             </div>
                             <div class="col-lg-1 col-md-4">
                                 <label class="font-weight-bold" for="mob-code">Code</label>
-                                <span id="pop-code" class="d-inline-block" tabindex="0" data-bs-toggle="popover"
+                                <span id="pop-code" class="d-inline-block"  data-bs-toggle="popover"
                                     data-bs-trigger="hover focus"
                                     data-bs-content="The country code is automatically set based on your selected country and cannot be modified manually.">
                                     <span class="material-symbols-outlined" style="font-size: 16px;">
@@ -307,7 +307,7 @@
                                 </label>
                             </div>
                             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7 d-flex d-flex align-items-center">
-                                <input type="radio" id="one-man" name="cus-type" value="one-man">
+                                <input type="radio" id="one-man"  name="cus-type" value="one-man">
                                 <label for="one-man">One-man business <span style="font-size: 16px;">(without
                                         company address
                                         details)</span></label>
@@ -324,8 +324,9 @@
                             <div class="col-lg-3 col-md-12 mb-3 mb-md-0">
                                 <label class="font-weight-bold required-field" for="postal">Postal
                                     Code</label>
-                                <input type="text" id="postal" class="form-control rounded-0"
-                                    placeholder="Enter your postal code">
+                                <input type="text" maxlength="6" id="postal" class="form-control rounded-0"
+                                    placeholder="Enter your postal code"
+                                    oninput="this.value = this.value.replace(/[^0-9]/, '');">
                                 <p id="pcoderesult"></p>
                             </div>
                             <div class="col-lg-3 col-md-12 mb-3 mb-md-0">
@@ -341,6 +342,66 @@
                                     placeholder="Enter your costom id">
                             </div>
                         </div>
+
+                        <div class="row form-group  ">
+                            <div class="col-lg-3 col-md-12 autocomplete-container">
+                                <label class="font-weight-bold" for="server">Server</label>
+                                <input placeholder="Enter Server type" autocomplete="off" type="text" id="server-type"
+                                    name="server" class="form-control rounded-0" />
+                                <div id="autocomplete-list" class="autocomplete-items"></div>
+                            </div>
+                            <div id="selected-items" class="col-lg-9 col-md-12 pt-5">
+
+                            </div>
+
+                        </div>
+
+                        <h2 class="fs-5 fw-bold mb-0 mt-5">Server Customization</h2>
+
+                        <div class="row form-group  ">
+
+                            <div class="col-lg-3 col-md-12 ">
+                                <label class="font-weight-bold required-field" for="server-date">Server Activation
+                                    Date</label>
+                                <input placeholder="Enter Server type" autocomplete="off" type="date" id="server-date"
+                                    name="server-date" class="form-control rounded-0" />
+                            </div>
+                            <div class="col-lg-4 col-md-12">
+                                <label class="font-weight-bold required-field" for="server-color">Server Theme
+                                    Color</label>
+                                <div class="color-input border py-3 ">
+                                    <div class=" d-flex justify-content-between px-3 mb-2 align-items-center">
+                                        <p>Primary Color</p>
+                                        <input placeholder="Enter Server Theme color" value="#3D5300" type="color"
+                                            id="server-color-primary" name="server-color-primary"
+                                            class="form-control form-color rounded-0" />
+                                    </div>
+                                    <div class=" d-flex justify-content-between px-3 align-items-center">
+                                        <p>Secondary Color</p>
+                                        <input placeholder="Enter Server Theme color" value="#859F3D" type="color"
+                                            id="server-color-secondary" name="server-color-secondary"
+                                            class="form-control form-color rounded-0" />
+                                    </div>
+                                </div>
+                                <p id="color-result"></p>
+                            </div>
+                            <div class="col-lg-5 col-md-12 ">
+                                <label class="font-weight-bold required-field" for="company-logo">Your Company Logo
+                                    (Image)</label>
+                                <div class="border file-input">
+                                    <input accept=".jpg,.png,.pdf" type="file" id="company-logo" name="company-logo"
+                                        class="form-control rounded-0" />
+                                    <p>Note: Your file must be in *.pdf, *.jpeg, or *.png format & must not exceed 500
+                                        KB in size.</p>
+                                </div>
+                                <p id="file-result"></p>
+                            </div>
+
+
+                        </div>
+
+
+
                         <h2 class="fs-5 fw-bold mb-0 mt-5">Details to your order communication
                             preferences
                         </h2>
