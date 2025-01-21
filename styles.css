@@ -334,6 +334,31 @@ a {
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
+.form-color {
+    width: 45% !important;
+    display: inline;
+    padding-bottom: 10px;
+
+}
+
+.color-input p {
+    color: black !important;
+    display: inline;
+    margin-bottom: 0;
+
+}
+
+.file-input {
+    height: 135px;
+    padding: 20px 20px;
+}
+
+.file-input p {
+    color: rgb(74, 74, 74) !important;
+    padding-top: 15px;
+}
+
+
 .input-group-append {
     margin-left: -1px;
 }
@@ -816,6 +841,67 @@ input[type="radio"] {
 
 #footer-hr {
     display: none;
+}
+
+.autocomplete-container {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+}
+
+#selected-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.tag {
+    background-color: #7cbd1e;
+    color: white;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.tag .remove-tag {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    z-index: 99;
+    width: 92%;
+    /* height: 300%; */
+    display: none;
+    overflow-y: scroll;
+    background-color: white;
+    /* top: 100%;
+    left: 0;
+    right: 0; */
+}
+
+.scroll-div {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.autocomplete-items div:hover {
+    background-color: black;
+    color: white;
+}
+
+.autocomplete-active {
+    background-color: black !important;
+    color: white;
 }
 
 @media (max-width:1200px) {
